@@ -1,9 +1,12 @@
 package com.github.rossilor95.jerver;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Jerver {
+    private static final Logger logger = LoggerFactory.getLogger(Jerver.class);
+
     public static void main(String[] args) {
-        System.out.println("Welcome to Jerver!");
+        logger.info("Welcome to Jerver!");
     }
 }
