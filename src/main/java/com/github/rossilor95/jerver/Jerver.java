@@ -1,5 +1,6 @@
 package com.github.rossilor95.jerver;
 
+import com.github.rossilor95.jerver.http.HttpMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +26,7 @@ public class Jerver {
     private void start() {
         try (var serverSocket = new ServerSocket(port)) {
             logger.info("Jerver started on port {}", port);
-            while(true) {
+            while (true) {
                 Socket clientSocket = serverSocket.accept();
                 logger.info("Client connected: {}", clientSocket.getInetAddress());
             }
