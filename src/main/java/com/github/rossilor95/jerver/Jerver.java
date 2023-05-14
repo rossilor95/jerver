@@ -1,6 +1,6 @@
 package com.github.rossilor95.jerver;
 
-import com.github.rossilor95.jerver.handler.RequestHandler;
+import com.github.rossilor95.jerver.http.RequestHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +10,7 @@ import java.net.Socket;
 
 public class Jerver {
     private static final Logger logger = LoggerFactory.getLogger(Jerver.class);
+
     private static final int DEFAULT_PORT = 8080;
 
     private int port;
