@@ -1,6 +1,5 @@
 package com.github.rossilor95.jerver.http;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -32,5 +31,4 @@ class HttpRequestParserTest {
         // Then:
         assertEquals(expectedHttpRequest, parsedRequest);
     }
-
 }
